@@ -1,133 +1,34 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Reza Taqyuddin</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
 	<!-- UIkit JS -->
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script></head>
-
-<body>
-	<!-- Main -->
-	<section id="main" class="uk-container-expand">
-		<div class="uk-position-relative">
-			<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar="dropbar: true">
-				<div class="uk-navbar-right">
-					<ul class="uk-navbar-nav">
-						<li>
-							<a href="#">Profile</a>
-							<div class="uk-navbar-dropdown">
-								<ul class="uk-nav uk-navbar-dropdown-nav">
-									<li class="uk-active"><a href="#">Active</a></li>
-									<li><a href="#">Item</a></li>
-									<li class="uk-nav-header">Header</li>
-									<li><a href="#">Item</a></li>
-									<li><a href="#">Item</a></li>
-									<li class="uk-nav-divider"></li>
-									<li><a href="#">Item</a></li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</nav>	
-			<div class="uk-navbar-dropbar"></div>
+	<script src="https://kit.fontawesome.com/8d616fc048.js" crossorigin="anonymous"></script>
+</head>
+<body class="uk-light uk-background-secondary">
+	<div class="uk-container">
+		<div class="uk-position-center">
+			Hi, My name is <span class='highlight'>Reza Taqyuddin</span><br>
+			a Fullstack Software Developer, Researcher and Tech Enthusiast
+			<br>
 		</div>
-	
-		<div class="uk-child-width-1-2@m uk-padding" uk-grid>
-			<section id="one">
-				<h2 class="major">Avoid <span class="highlight uk-button-text">Bias</span> by Understanding The <span class="highlight uk-button-text">Context</span></h2>
-				<p>
-					This is a Natural Language Processing (NLP) Thesis project which leverage the usage of Artificial Intelligence in order to analyze context from comments and reviews about Universitas Sumatera Utara.
-					<br><br>
-					This project is using dataset that has been collected using 2 different method, e.g : 
-				<ul>
-					<li>Manual Collection</li>
-					<li>Comments scraping from Social Media</li>
-				</ul>
-
-				Dosen pembimbing :
-				<ol>
-					<li><a href="https://direktori.usu.ac.id/profile/eyJpdiI6Im1OeUVTZjRzNjhVcFNXZnlyT1BUZFE9PSIsInZhbHVlIjoiUE9CRGVRXC9JZlBySGFIaG5pOGNROFE9PSIsIm1hYyI6IjMwZmVhMTFlZmYyNzliYjhiZDEwNzQ1Y2U3MDRiMGZiNmNlNTU0OWVjMmQ3MjYzYzFlYWQ0NDhkNGRhNjZhOWUifQ=="
-							target="_blank">Prof.
-							Dr. Opim Salim Sitompul M.Sc</a></li>
-					<li><a href="https://direktori.usu.ac.id/profile/eyJpdiI6Ikd4bDhlV3RNUzVQZENjbEVpRTlXckE9PSIsInZhbHVlIjoiK2xIRWZYajNTN3ZkOGtUREsrZSt5Zz09IiwibWFjIjoiMTRmNTA3NjRkYWE0ZjI0NDMyYTk5Nzk4ODI1NDk2MmMxYTY5NzBmNjdmYTg4ODA2ZTU0NmY1NjIyZWE4ZjEyMSJ9"
-							target="_blank">Dr.
-							Amalia ST., M.T</a></li>
-				</ol>
-				</p>
-			</section>
-
-
-			<!-- Three -->
-			<section id="three">
-				<img src="images/image.jpeg" uk-image>
-				
-			</section>
-		</div>
-	</section>
-	<section class="uk-section uk-container">
-		<div class="uk-card uk-card-body uk-background-default">
-		<h2>What do you say about USU</h2>
-			<p>Give your honest opinion about USU.</p>
-			<div class='alert' id='review-body'></div>
-			<div class="row">
-				<div class="col-12 col-12-small">
-					<form method="post" action="#">
-						<div class="row gtr-uniform gtr-50">
-							<div class="col-12"><textarea name="message" id="text-review" class="uk-textarea" placeholder="Message"
-									rows="4"></textarea></div>
-						</div>
-					</form>
-					<button id='submit-review' type="submit" class="uk-button uk-button-primary">Submit Review</button>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				<li><a href="https://github.com/rezataqyuddin" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
-				<li><a href="https://www.instagram.com/rezataqyuddinn/" class="icon brands fa-instagram"><span
-							class="label">Instagram</span></a></li>
-				<li><a href="mailto: rezataqyuddin@usu.ac.id" class="icon solid fa-envelope"><span
-							class="label">Email</span></a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; 2021</li>
-				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		<div class="uk-position-center-left">
+			<ul>
+				<li><a href="mailto: rezataqyuddin@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+				<li><a href="https://github.com/rezataqyuddin"><i class="fa-brands fa-github"></i></a></li>
+				<li><a href="https://instagram.com/rezataqyuddin"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="https://linkedin.com/in/rezataqyuddin"><i class="fa-brands fa-linkedin"></i></a></li>
 			</ul>
 		</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script>
-		$("#submit-review").on("click", function (e) {
-			e.preventDefault();
-			$.ajax({
-				url: "https://sidana.usu.ac.id/api/reviews",
-				method: "post",
-				data: {
-					review: $("#text-review").val(),
-				},
-				success: function (html) {
-					$("#review-body").html(html);
-					$("#text-review").val("");
-				},
-			});
-		});
-	</script>
-
+	</div>
 </body>
-
 </html>
